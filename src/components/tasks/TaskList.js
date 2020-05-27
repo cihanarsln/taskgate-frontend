@@ -12,7 +12,7 @@ const TaskList = () => {
             <div className="fifteen wide column">
                 <div className="ui selection list">
                     <div className="header" style={{fontSize:"16px", fontFamily:"Roboto Slab", color:"#142850", margin:"0px 0px 20px 25px"}}>Upcoming Tasks</div>
-                    {renderList(tasks)}                    
+                    {renderList(tasks)}                   
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@ const renderList = (tasks) => {
                         <i className="blue calendar alternate outline icon"></i>
                         {task.startDate} - {task.dueDate}
                         <div className="ui basic image label" style={{marginLeft:"30px", border:"None"}}>
-                            <i className="pink large user circle icon"/>
+                            <i className="pink user circle icon"/>
                             {task.manager.name}
                         </div>
                     </div> 
