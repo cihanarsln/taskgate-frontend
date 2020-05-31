@@ -4,3 +4,71 @@
     color: darkblue;
     margin-bottom: 10px;
 }
+
+#tasks-list{
+    -webkit-box-shadow: 0px 10px 30px -15px rgba(145,114,145,1);
+    -moz-box-shadow: 0px 10px 30px -15px rgba(145,114,145,1);
+    box-shadow: 0px 10px 30px -15px rgba(145,114,145,1);
+    padding: 20px 10px;
+    margin-bottom: 50px;
+}
+
+#tasks-list-h1{
+    font-family: Lexend Deca;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#tasks-list-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    color: lightseagreen;
+}
+
+#tasks-manager-icon{
+    color: darkblue;
+    margin-right: 5px;
+}
+
+#tasks-list-body{
+    font-family: Lexend Deca;
+    font-size: 14px;
+}
+
+#tasks-list-description{
+    font-family: 'Economica', sans-serif;
+    font-size: medium;
+}
+
+.blue-difficulty{
+    color: royalblue;
+}
+
+.green-difficulty{
+    color: sandybrown;
+}
+
+.red-difficulty{
+    color: seagreen;
+}
+
+#tasks-edit-button{
+    margin-left: 5px;
+    background-color: lightcoral;
+}
+
+#tasks-add-task{
+    font-family: Lexend Deca;
+    font-size: 14px;
+    height: 35px;
+    background-color: #0088cc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: right;
+    border: none;
+}
+
+.icon-tasks-add{
+    margin-right: 5px;
+}
