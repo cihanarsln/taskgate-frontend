@@ -10,9 +10,9 @@ const TaskListDashboard = () => {
     ]);
 
     const [managedTasks, setManagedTasks] = useState([
-        {id: "4", title: "Welcome Page Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "26.05.2020", dueDate: "30.05.2020", difficulty:"3", manager:{id: "3", name:"Daniel Louis"}, member:{id: "4", name:"Alex F."}},
-        {id: "5", title: "Delivery Page Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "31.05.2020", dueDate: "04.06.2020", difficulty:"2", manager:{id: "3", name:"Daniel Louis"}, member:{id: "4", name:"Paul S."}},
-        {id: "6", title: "Cancel Page Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "05.06.2020", dueDate: "09.06.2020", difficulty:"3", manager:{id: "3", name:"Daniel Louis"}, member:{id: "5", name:"Devid B."}},
+        {id: "4", title: "Pagination Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "26.05.2020", dueDate: "30.05.2020", difficulty:"3", manager:{id: "3", name:"Daniel Louis"}, member:{id: "4", name:"Alex F."}},
+        {id: "5", title: "Icon Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "31.05.2020", dueDate: "04.06.2020", difficulty:"2", manager:{id: "3", name:"Daniel Louis"}, member:{id: "4", name:"Paul S."}},
+        {id: "6", title: "Welcome Page Tests", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "05.06.2020", dueDate: "09.06.2020", difficulty:"3", manager:{id: "3", name:"Daniel Louis"}, member:{id: "5", name:"Devid B."}},
     ]);
 
     return(
@@ -89,7 +89,7 @@ const renderList = (tasks) => {
             </tr>
         );
     });
-}
+};
 
 const renderManagedList = (tasks) => {
     return tasks.map(task => {
@@ -114,9 +114,7 @@ const renderManagedList = (tasks) => {
             </tr>
         );
     });
-}
-
-
+};
 
 const renderDifficultyIcon = (diff) => {
     const diffColor = ["blue", "green", "red"][parseInt(diff, 10)-1];

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {Nav, Navbar} from "react-bootstrap";
 import '../css/NavigationBar.css';
 
@@ -11,13 +12,17 @@ const NavigationBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                    <Nav.Link href="#dashboard">
-                        <i className="fas fa-border-all" id="icon-navbar"></i>
-                        Dashboard
+                    <Nav.Link>
+                        <Link className="link" to="/">
+                            <i className="fas fa-border-all" id="icon-navbar"></i>
+                            Dashboard
+                        </Link>
                     </Nav.Link>
-                    <Nav.Link href="#task">
-                        <i className="far fa-edit" id="icon-navbar"></i>
-                        Tasks
+                    <Nav.Link>
+                        <Link className="link" to="/tasks">
+                            <i className="far fa-clone" id="icon-navbar"></i>
+                            Tasks
+                        </Link>
                     </Nav.Link>
                     </Nav>
                     <Nav>
