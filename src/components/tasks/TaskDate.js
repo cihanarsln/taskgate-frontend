@@ -1,36 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Row, Col } from 'react-bootstrap';
+import '../../css/TaskDate.css';
 
 const TaskDate = () => {
-    const fourteen = [];
+    const twelve = [];
     
     const today = new Date();
     var i;
     for (i = 0; i < 14; i++) {
         const date = new Date(today);
-        fourteen[i] = date;
+        twelve[i] = date;
         date.setDate(date.getDate()+i)
     }
 
-    const taskDates = [fourteen[3], fourteen[7], fourteen[13]];
+    const [days, setDays] = useState(twelve);
+    const [taskDates, setTaskDates] = useState([twelve[3], twelve[7], twelve[11]]);
 
     return(
-        <div>
-            <div className="ui grid">
-                {DateCol(taskDates, fourteen[0])} 
-                {DateCol(taskDates, fourteen[1])} 
-                {DateCol(taskDates, fourteen[2])} 
-                {DateCol(taskDates, fourteen[3])} 
-                {DateCol(taskDates, fourteen[4])} 
-                {DateCol(taskDates, fourteen[5])} 
-                {DateCol(taskDates, fourteen[6])} 
-                {DateCol(taskDates, fourteen[7])} 
-                {DateCol(taskDates, fourteen[8])} 
-                {DateCol(taskDates, fourteen[9])} 
-                {DateCol(taskDates, fourteen[10])}
-                {DateCol(taskDates, fourteen[11])} 
-                {DateCol(taskDates, fourteen[12])} 
-                {DateCol(taskDates, fourteen[13])}  
-            </div>
+        <div id="task-date">
+            <Row>
+                {DateCol(taskDates, days[0])} 
+                {DateCol(taskDates, days[1])} 
+                {DateCol(taskDates, days[2])} 
+                {DateCol(taskDates, days[3])} 
+                {DateCol(taskDates, days[4])} 
+                {DateCol(taskDates, days[5])} 
+                {DateCol(taskDates, days[6])} 
+                {DateCol(taskDates, days[7])} 
+                {DateCol(taskDates, days[8])} 
+                {DateCol(taskDates, days[9])} 
+                {DateCol(taskDates, days[10])}
+                {DateCol(taskDates, days[11])}  
+            </Row>
         </div>
     );
 }
@@ -39,19 +40,27 @@ const DateCol = (taskDates, date) => {
     const text = getDateText(date);
     if(taskDates.includes(date)){
         return(
-            <div className="one wide column" style={{backgroundColor:"#fde2e2", height:"80px", textAlign:"center", padding:"20px 0px", marginLeft:"5px", fontFamily:"Roboto Slab"}}>
-                    <span style={{fontSize:"12px"}}>{text[0]} {text[1]}</span>
+            <Col xs={4} md={2} lg={1}>
+                <div id="task-date-end">
+                    <span id="task-date-day">{text[2]}</span>
                     <br />
-                    <span style={{fontSize:"14px"}}>{text[2]}</span>
-            </div>   
+                    <span id="task-date-day">{text[0]}</span>
+                    <br />
+                    <span id="task-date-date">{text[1]}</span>
+                </div>
+            </Col>   
         );
     }else{
         return(
-            <div className="one wide column" style={{backgroundColor:"#ecfbfc", height:"80px", textAlign:"center", padding:"20px 0px", marginLeft:"5px", fontFamily:"Roboto Slab"}}>
-                    <span style={{fontSize:"12px"}}>{text[0]} {text[1]}</span>
+            <Col xs={4} md={2} lg={1}>
+                <div id="task-date-normal">
+                    <span id="task-date-day">{text[2]}</span>
                     <br />
-                    <span style={{fontSize:"14px"}}>{text[2]}</span>
-            </div>
+                    <span id="task-date-day">{text[0]}</span>
+                    <br />
+                    <span id="task-date-date">{text[1]}</span>
+                </div>
+            </Col>
         );
     }
 };

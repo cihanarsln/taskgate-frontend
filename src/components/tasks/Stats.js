@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import '../../css/Stats.css';
+import { Row, Col } from 'react-bootstrap';
 
 const Stats = () => {
-    const stats = ["48", "42", "6"];
+    const [stats, setStats] = useState(["48", "42", "6"]);
     return(
-        <div className="ui grid" style={{position:"absolute", bottom: 20, width:"100%"}}>
-            <div className="fifteen wide column" style={{fontSize:"14px", fontFamily:"Arvo"}}>
-                <div className="ui teal message" style={{width: "100%"}}>
-                    <span style={{fontSize: "72px"}}>
-                            {stats[0]}
-                    </span>
-                    tasks
-                    <span style={{fontSize: "72px", marginLeft:"30px"}}>
-                            {stats[1]}
-                    </span>
-                    completed
-                    <span style={{fontSize: "72px", marginLeft:"30px"}}>
-                            {stats[2]}
-                    </span>
-                    pending
-                </div>         
-            </div>
-            
+        <div>
+            <Row xs={3} md={4} lg={6}>
+                <Col>
+                    <div id="stats-col-total">
+                        <i className="far fa-clone" id="stats-icon"></i>
+                        <span id="stats-numeric">{stats[0]}</span>
+                        <span id="stats-description"> taks</span>
+                    </div>
+                </Col>
+                <Col>
+                    <div id="stats-col-completed">
+                        <i className="far fa-check-square" id="stats-icon-completed"></i>
+                        <span id="stats-numeric">{stats[1]}</span>
+                        <span id="stats-description"> completed</span>
+                    </div>
+                </Col>
+                <Col>
+                    <div id="stats-col-completed">
+                        <i className="fas fa-grip-vertical" id="stats-icon-progress"></i>
+                        <span id="stats-numeric">{stats[2]}</span>
+                        <span id="stats-description"> in-progress</span>
+                    </div>
+                </Col>
+            </Row>
         </div>
     );
 };

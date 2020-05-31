@@ -1,15 +1,17 @@
 import React from 'react';
+import '../../css/Dashboard.css';
 
 import TaskDate from "./TaskDate";
-import TaskList from "./TaskList";
+import TaskListDashboard from "./TaskListDashboard";
 import Stats from './Stats';
 
 const Dashboard = () => {
     return(
-        <div style={{paddingTop:"40px"}}>
-            <TaskDate />
-            <TaskList />  
+        <div className="container">
+            <h1 id="h1-dashboard">dashboard.</h1>
             <Stats />
+            <TaskDate />
+            <TaskListDashboard />
         </div>
     );
 };

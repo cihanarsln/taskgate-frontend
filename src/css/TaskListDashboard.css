@@ -1,0 +1,52 @@
+.blue-difficulty{
+    color: royalblue;
+}
+
+.green-difficulty{
+    color: sandybrown;
+}
+
+.red-difficulty{
+    color: seagreen;
+}
+
+#manager-icon-dashboard{
+    color: darkblue;
+    margin-right: 5px;
+}
+
+#dashboard-task-list{
+    -webkit-box-shadow: 0px 10px 30px -15px rgba(145,114,145,1);
+    -moz-box-shadow: 0px 10px 30px -15px rgba(145,114,145,1);
+    box-shadow: 0px 10px 30px -15px rgba(145,114,145,1);
+    padding: 20px 10px;
+    margin-bottom: 50px;
+}
+
+#dashboard-task-list-title{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 14px;
+    color: lightseagreen;
+}
+
+#dashboard-task-list-body{
+    font-family: Lexend Deca;
+    font-size: 14px;
+}
+
+#dashboard-task-list-h1{
+    font-family: Lexend Deca;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#dashboard-task-list-see-all{
+    font-family: Lexend Deca;
+    font-size: 12px;
+    background-color: #0088cc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    float: right;
+    border: none;
+}

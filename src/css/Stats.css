@@ -1,0 +1,44 @@
+#stats-icon{
+    color: white;
+    margin-right: 8px;
+    padding: 10px;
+    background: linear-gradient(315deg, rgba(0,0,139,1) 0%, rgba(83,83,158,1) 50%, rgba(182,182,215,1) 100%);
+    border-radius: 6px;
+}
+
+#stats-icon-completed{
+    color: white;
+    margin-right: 3px;
+    padding: 10px;
+    background: linear-gradient(315deg, rgba(121,138,224,1) 0%, rgba(155,155,210,1) 40%, rgba(255,255,255,1) 100%);
+    border-radius: 6px;
+}
+
+#stats-icon-progress{
+    color: white;
+    margin-right: 3px;
+    padding: 10px;
+    background: linear-gradient(315deg, rgba(164,186,82,1) 0%, rgba(192,242,163,1) 60%, rgba(255,255,255,1) 100%);
+    border-radius: 6px;
+}
+
+#stats-col-total{
+    padding: 10px 5px;
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(204,204,235,1) 40%, rgba(113,113,208,1) 100%);
+    border-radius: 6px;
+}
+
+#stats-col-completed{
+    padding: 10px 5px;
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(201,201,224,1) 40%, rgba(169,169,204,1) 100%);
+    border-radius: 6px;
+}
+
+#stats-numeric{
+    font-family: Lexend Deca;
+    font-size: large;
+}
+
+#stats-description{
+    font-size: 12px;
+}

@@ -1,0 +1,29 @@
+#task-date{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#task-date-end{
+    border-radius: 6px; 
+    background-color: lightcoral;
+    text-align: center;
+    padding: 5px 0px;
+    margin-top: 5px;
+    color: #ffffff;
+}
+
+#task-date-normal{
+    color: midnightblue;
+    text-align: center;
+    padding: 5px 0px;
+    margin-top: 5px;
+}
+
+#task-date-day{
+    font-family: Lexend Deca;
+    font-size: 14px;
+}
+
+#task-date-date{
+    font-size: 12px;
+}
