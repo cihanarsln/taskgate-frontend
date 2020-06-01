@@ -80,7 +80,7 @@ const renderList = (tasks) => {
                     {task.manager.name}
                 </td>
                 <td>
-                    <Button variant="success">
+                    <Button variant="success" id="tasks-button-group">
                         <i className="fas fa-flag-checkered"></i>
                     </Button>
                 </td>
@@ -138,7 +138,7 @@ const renderManagedList = (tasks) => {
                     {task.member.name}
                 </td>
                 <td>
-                    <ButtonGroup>
+                    <ButtonGroup id="tasks-button-group">
                         <Button variant="danger">
                             <i className="far fa-trash-alt"></i>
                         </Button>

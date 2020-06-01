@@ -80,3 +80,7 @@
     border: none;
     height: 24px;
 }
+
+#tasks-button-group{
+    float: right;
+}

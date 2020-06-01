@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Table, Button } from 'react-bootstrap';
+import { Table, Button, ButtonGroup } from 'react-bootstrap';
 import '../../css/Members.css';
 
 const Members = () => {
@@ -26,7 +26,7 @@ const renderMembers = (members) => {
                     <thead id="members-list-title">
                         <tr>
                             <th>Name</th>
-                            <th>Role</th>
+                            <th>Roles</th>
                             <th>Tasks</th>
                             <th>Completed</th>
                             <th>In-progress</th>
@@ -61,9 +61,14 @@ const renderList = (members) => {
                     {member.inprogress}
                 </td>
                 <td>
-                    <Button variant="success">
-                        <i className="fas fa-flag-checkered"></i>
-                    </Button>
+                    <ButtonGroup id="members-button-group">
+                        <Button variant="danger">
+                            <i className="fas fa-user-minus"></i>
+                        </Button>
+                        <Button variant="secondary" id="member-edit-button">
+                            <i className="fas fa-pencil-alt"></i>
+                        </Button>
+                    </ButtonGroup>
                 </td>
             </tr>
         );
@@ -71,7 +76,26 @@ const renderList = (members) => {
 };
 
 const renderRoleLabel = (roles) => {
-    
+    return(
+        <div>
+            <div id="role-label-user">
+                <i className="fas fa-user icon-members"></i>
+                User
+            </div>
+            {renderManagerLabel(roles)}
+        </div>
+    );
+};
+
+const renderManagerLabel = (roles) => {
+    if(roles.some(role => role.name === "manager")){
+        return(
+            <div id="role-label-manager">
+                <i className="fas fa-user-tie icon-members"></i>
+                Manager
+            </div>
+        )
+    }
 }
 
 export default Members;
