@@ -13,10 +13,10 @@ const Tasks = () => {
     ]);
 
     const [managedTasks, setManagedTasks] = useState([
-        {id: "4", title: "Pagination Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "26.05.2020", dueDate: "30.05.2020", difficulty:"3", manager:{id: "3", name:"Daniel Louis"}, member:{id: "4", name:"Alex F."}},
-        {id: "5", title: "Icon Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "31.05.2020", dueDate: "04.06.2020", difficulty:"2", manager:{id: "3", name:"Daniel Louis"}, member:{id: "4", name:"Paul S."}},
-        {id: "6", title: "Welcome Page Tests", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "05.06.2020", dueDate: "09.06.2020", difficulty:"3", manager:{id: "3", name:"Daniel Louis"}, member:{id: "5", name:"Devid B."}},
-        {id: "10", title: "Icon Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "09.06.2020", dueDate: "11.06.2020", difficulty:"1", manager:{id: "3", name:"Daniel Louis"}, member:{id: "4", name:"Paul S."}},
+        {id: "4", title: "Pagination Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "26.05.2020", dueDate: "30.05.2020", difficulty:"3", manager:{id: "3", name:"Daniel Louis"}, member:{id: "4", name:"Alex Fergs"}},
+        {id: "5", title: "Icon Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "31.05.2020", dueDate: "04.06.2020", difficulty:"2", manager:{id: "3", name:"Daniel Louis"}, member:{id: "5", name:"Paul Schick"}},
+        {id: "6", title: "Welcome Page Tests", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "05.06.2020", dueDate: "09.06.2020", difficulty:"3", manager:{id: "3", name:"Daniel Louis"}, member:{id: "6", name:"Devid Beck"}},
+        {id: "10", title: "Icon Design", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", startDate: "09.06.2020", dueDate: "11.06.2020", difficulty:"1", manager:{id: "3", name:"Daniel Louis"}, member:{id: "5", name:"Paul Schick"}},
     ]);
     return(
         <div className="container">
