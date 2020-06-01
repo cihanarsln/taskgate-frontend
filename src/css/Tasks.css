@@ -72,3 +72,11 @@
 .icon-tasks-add{
     margin-right: 5px;
 }
+
+.tasks-completed-checkbox{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    float: right;
+    border: none;
+    height: 24px;
+}

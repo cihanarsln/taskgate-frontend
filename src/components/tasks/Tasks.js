@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Table, Button, ButtonGroup } from 'react-bootstrap';
+import { Table, Button, ButtonGroup, Form } from 'react-bootstrap';
 import '../../css/Tasks.css';
 
 const Tasks = () => {
@@ -34,6 +34,7 @@ const Tasks = () => {
 const renderTasks = (tasks) => {
     return(
         <div id="tasks-list">
+            {renderCompeletedCheckbox("tasks-checkbox")}
             <h1 id="tasks-list-h1">Tasks</h1>
                 <Table responsive>
                     <thead id="tasks-list-title">
@@ -91,6 +92,7 @@ const renderList = (tasks) => {
 const renderManagedTasks = (tasks) => {
     return(
         <div id="tasks-list">
+            {renderCompeletedCheckbox("managed-checkbox")}
             <h1 id="tasks-list-h1">Managed Tasks</h1>
                 <Table responsive>
                     <thead id="tasks-list-title">
@@ -148,6 +150,21 @@ const renderManagedList = (tasks) => {
             </tr>
         );
     });
+};
+
+const renderCompeletedCheckbox = (id) => {
+    return(
+        <Form className="tasks-completed-checkbox">
+            <Form.Group>
+                <Form.Check 
+                    custom
+                    type="checkbox"
+                    id={`${id}`}
+                    label={`Show completed tasks`}
+                />
+            </Form.Group> 
+        </Form>
+    );
 };
 
 const renderDifficultyIcon = (diff) => {

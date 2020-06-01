@@ -4,6 +4,11 @@
     color: #142850;
 }
 
+#brand:hover{
+    color: #142850;
+    text-decoration: none;
+}
+
 #icon-navbar{
     color: darkblue;
     margin-right: 3px;

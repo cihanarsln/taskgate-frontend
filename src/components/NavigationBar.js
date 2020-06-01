@@ -8,7 +8,11 @@ const NavigationBar = () => {
     return(
         <div>
             <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-                <Navbar.Brand href="#home" id="brand">Taskgate</Navbar.Brand>
+                <Navbar.Brand>
+                    <Link id="brand" to="/">
+                        Taskgate
+                    </Link>
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
@@ -44,8 +48,10 @@ const renderManagerMenu = (manager) => {
         return(
             <div>
                 <Nav.Link href="#members">
-                    <i className="fas fa-users" id="icon-navbar"></i>
-                    Members
+                    <Link className="link" to="/members">
+                        <i className="fas fa-users" id="icon-navbar"></i>
+                        Members
+                    </Link>
                 </Nav.Link>
             </div>
         );

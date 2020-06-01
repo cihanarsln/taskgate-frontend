@@ -4,6 +4,7 @@ import history from '../history';
 import NavigationBar from './NavigationBar';
 import Dashboard from './tasks/Dashboard';
 import Tasks from './tasks/Tasks';
+import Members from './tasks/Members';
 
 const App = () => {
     return(
@@ -13,6 +14,7 @@ const App = () => {
                 <Switch>
                     <Route path="/" exact component={Dashboard} />
                     <Route path="/tasks" exact component={Tasks} />
+                    <Route path="/members" exact component={Members} />
                 </Switch>
             </Router>
         </div>
