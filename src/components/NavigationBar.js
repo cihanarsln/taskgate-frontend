@@ -31,7 +31,7 @@ const NavigationBar = () => {
                     </Nav>
                     <Nav>
                     {renderManagerMenu(user.manager)}
-                    <Nav.Link href="#user">
+                    <Nav.Link>
                         <i className="far fa-user-circle" id="icon-navbar"></i>
                         {user.name}
                     </Nav.Link>
@@ -47,7 +47,7 @@ const renderManagerMenu = (manager) => {
     if(isManager){
         return(
             <div>
-                <Nav.Link href="#members">
+                <Nav.Link>
                     <Link className="link" to="/members">
                         <i className="fas fa-users" id="icon-navbar"></i>
                         Members

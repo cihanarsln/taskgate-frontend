@@ -39,7 +39,10 @@
     background-color: yellowgreen;
     text-align: center;
     border-radius: 6px;
-    display: inline;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 80px;
+    float: left;
 }
 
 #role-label-manager{
@@ -48,10 +51,25 @@
     background-color: lightcoral;
     text-align: center;
     border-radius: 6px;
-    margin-left: 10px;
-    display: inline;
+    width: 110px;
+    float: left;
 }
 
 .icon-members{
+    margin-right: 5px;
+}
+
+#members-add-member{
+    font-family: Lexend Deca;
+    font-size: 14px;
+    height: 35px;
+    background-color: #0088cc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: right;
+    border: none;
+}
+
+.icon-member-add{
     margin-right: 5px;
 }

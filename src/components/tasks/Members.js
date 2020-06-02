@@ -13,6 +13,10 @@ const Members = () => {
     ]);
     return(
         <div className="container">
+             <Button id="members-add-member">
+                <i className="fas fa-user-plus icon-member-add"></i>
+                Member
+            </Button>
             <h1 id="h1-members">members.</h1>
             {renderMembers(members)}
         </div>
@@ -91,7 +95,7 @@ const renderManagerLabel = (roles) => {
     if(roles.some(role => role.name === "manager")){
         return(
             <div id="role-label-manager">
-                <i className="fas fa-user-tie icon-members"></i>
+                <i className="fas fa-user-friends icon-members"></i>
                 Manager
             </div>
         )
