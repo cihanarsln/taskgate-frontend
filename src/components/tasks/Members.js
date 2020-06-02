@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Table, Button, ButtonGroup } from 'react-bootstrap';
 import '../../css/Members.css';
+import Member from './Member';
 
 const Members = () => {
     const [members, setMembers] = useState([
@@ -11,12 +12,18 @@ const Members = () => {
         {id:"5", name: "Paul Schick", roles: [{id:"1", name:"user"}], tasks:"66", completed: "58", inprogress: "8"},
         {id:"6", name: "Devid Beck", roles: [{id:"1", name:"user"}], tasks:"25", completed: "20", inprogress: "5"},
     ]);
+
+    const [modalShow, setModalShow] = React.useState(false);
+
     return(
         <div className="container">
-             <Button id="members-add-member">
+             <Button 
+             id="members-add-member"
+             onClick = {() => setModalShow(true)} >
                 <i className="fas fa-user-plus icon-member-add"></i>
                 Member
             </Button>
+            <Member show={modalShow} onHide={() => setModalShow(false)} header="New Member"/>
             <h1 id="h1-members">members.</h1>
             {renderMembers(members)}
         </div>
